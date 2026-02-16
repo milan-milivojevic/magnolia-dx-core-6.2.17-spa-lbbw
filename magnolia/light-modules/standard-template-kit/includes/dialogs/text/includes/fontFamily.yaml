@@ -1,0 +1,73 @@
+label: Font Family
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  options:
+    - name: default
+      value: default
+      label: default
+    - name: ClanforLBBW-News
+      value: ClanforLBBW-News
+      label: ClanforLBBW-News
+    - name: ClanforLBBW-NewsItalic
+      value: ClanforLBBW-NewsItalic
+      label: ClanforLBBW-NewsItalic   
+    - name: ClanforLBBW-Book
+      value: ClanforLBBW-Book
+      label: ClanforLBBW-Book
+    - name: ClanforLBBW-BookItalic
+      value: ClanforLBBW-BookItalic
+      label: ClanforLBBW-BookItalic    
+    - name: ClanforLBBW-Medium
+      value: ClanforLBBW-Medium
+      label: ClanforLBBW-Medium
+    - name: ClanforLBBW-MediumItalic
+      value: ClanforLBBW-MediumItalic
+      label: ClanforLBBW-MediumItalic    
+    - name: ClanforLBBWNarr-Medium
+      value: ClanforLBBWNarr-Medium
+      label: ClanforLBBWNarr-Medium
+    - name: ClanforLBBW-Bold
+      value: ClanforLBBW-Bold
+      label: ClanforLBBW-Bold
+    - name: ClanforLBBW-BoldItalic
+      value: ClanforLBBW-BoldItalic
+      label: ClanforLBBW-BoldItalic
+
+    # Sparkasse fonts
+    - name: Sparkasse_Lt
+      value: Sparkasse_Lt
+      label: Sparkasse_Lt
+    - name: Sparkasse_LtIt
+      value: Sparkasse_LtIt
+      label: Sparkasse_LtIt
+    - name: Sparkasse_Rg
+      value: Sparkasse_Rg
+      label: Sparkasse_Rg
+    - name: Sparkasse_It
+      value: Sparkasse_It
+      label: Sparkasse_It
+    - name: Sparkasse_Md
+      value: Sparkasse_Md
+      label: Sparkasse_Md
+    - name: Sparkasse_Bd
+      value: Sparkasse_Bd
+      label: Sparkasse_Bd
+    - name: Sparkasse_BdIt
+      value: Sparkasse_BdIt
+      label: Sparkasse_BdIt
+    - name: SparkasseHead_Rg
+      value: SparkasseHead_Rg
+      label: SparkasseHead_Rg
+    - name: SparkasseSerif_Bd
+      value: SparkasseSerif_Bd
+      label: SparkasseSerif_Bd
+    - name: SparkasseSerif_BdIt
+      value: SparkasseSerif_BdIt
+      label: SparkasseSerif_BdIt
+    - name: SparkasseSerif_Rg
+      value: SparkasseSerif_Rg
+      label: SparkasseSerif_Rg
+    - name: SparkasseSerif_It
+      value: SparkasseSerif_It
+      label: SparkasseSerif_It

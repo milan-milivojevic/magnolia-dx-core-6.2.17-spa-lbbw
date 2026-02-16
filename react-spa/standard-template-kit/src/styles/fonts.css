@@ -1,0 +1,133 @@
+@charset 'UTF-8';
+
+@font-face {
+  font-family: "ClanforLBBW-News";
+  src: url("../fonts/ClanforLBBW/ClanforLBBW-News.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "ClanforLBBW-NewsItalic";
+  src: url("../fonts/ClanforLBBW/ClanforLBBW-NewsItalic.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "ClanforLBBW-Book";
+  src: url("../fonts/ClanforLBBW/ClanforLBBW-Book.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "ClanforLBBW-BookItalic";
+  src: url("../fonts/ClanforLBBW/ClanforLBBW-BookItalic.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "ClanforLBBW-Medium";
+  src: url("../fonts/ClanforLBBW/ClanforLBBW-Medium.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "ClanforLBBW-MediumItalic";
+  src: url("../fonts/ClanforLBBW/ClanforLBBW-MediumItalic.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "ClanforLBBWNarr-Medium";
+  src: url("../fonts/ClanforLBBW/ClanforLBBWNarr-Medium.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "ClanforLBBW-Bold";
+  src: url("../fonts/ClanforLBBW/ClanforLBBW-Bold.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "ClanforLBBW-BookItalic";
+  src: url("../fonts/ClanforLBBW/ClanforLBBW-BookItalic.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "Sparkasse_Lt";
+  src: url("../fonts/Sparkasse/Sparkasse_Lt.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "Sparkasse_LtIt";
+  src: url("../fonts/Sparkasse/Sparkasse_LtIt.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "Sparkasse_Rg";
+  src: url("../fonts/Sparkasse/Sparkasse_Rg.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "Sparkasse_It";
+  src: url("../fonts/Sparkasse/Sparkasse_It.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "Sparkasse_Md";
+  src: url("../fonts/Sparkasse/Sparkasse_Md.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "Sparkasse_Bd";
+  src: url("../fonts/Sparkasse/Sparkasse_Bd.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "Sparkasse_BdIt";
+  src: url("../fonts/Sparkasse/Sparkasse_BdIt.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "SparkasseHead_Rg";
+  src: url("../fonts/Sparkasse/SparkasseHead_Rg.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "SparkasseSerif_Bd";
+  src: url("../fonts/Sparkasse/SparkasseSerif_Bd.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "SparkasseSerif_BdIt";
+  src: url("../fonts/Sparkasse/SparkasseSerif_BdIt.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "SparkasseSerif_Rg";
+  src: url("../fonts/Sparkasse/SparkasseSerif_Rg.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "SparkasseSerif_It";
+  src: url("../fonts/Sparkasse/SparkasseSerif_It.ttf")
+        format("truetype");
+}
+
+@font-face {
+  font-family: "SparkasseSymbol_Rg";
+  src: url("../fonts/Sparkasse/SparkasseSymbol_Rg.ttf")
+        format("truetype");
+}

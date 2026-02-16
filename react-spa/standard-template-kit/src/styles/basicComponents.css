@@ -1,0 +1,22 @@
+/*Media Components */
+
+.audioComponent,
+.videoComponent,
+.iframeComponent {
+    display: flex;
+}
+
+/* Video Component */
+
+video {
+  max-width: 100%;
+}
+
+/*Link Component*/
+
+.link {
+    display: flex;
+    cursor: pointer;
+    font-family: 'ClanforLBBW-Book';
+    color: #0000ff;
+}

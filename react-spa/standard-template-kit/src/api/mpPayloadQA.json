@@ -1,0 +1,152 @@
+{
+    "searchSchemaId": "asset",
+    "lang": "DE",
+    "output": {
+        "items": {
+            "fields": [
+                "id",
+                "title",
+                "title_multi",
+                "actualVersionNumber",
+                "currentVersion",
+                "validFrom",
+                "validTo",
+                "keywords",
+                "keywords_multi",
+                "affiliateNumber",
+                "owner",
+                "description",
+                "description_multi",
+                "division",
+                "editState",
+                "masterAsset",
+                "lastUpdatedTime",
+                "popularity",
+                "suitableForW2P",
+                "hiRes",
+                "isins",
+                "relationsCount",
+                "downloadApprovalData",
+                "themes",
+                "watchers",
+                "variants",
+                "variantsCount",
+                "alternativeImage",
+                "hideIfNotValid",
+                "versionCount",
+                "platform",
+                "license",
+                "uploadDate",
+                "programVersion",
+                "versions",
+                "channelPublications",
+                "persons",
+                "relations",
+                "language",
+                "countries",
+                "structuredKeywords",
+                "uploadApprovalData",
+                "vdb",
+                "assetType",
+                "customAttribute_26",
+                "customAttribute_27",
+                "customAttribute_28",
+                "customAttribute_30",
+                "customAttribute_31",
+                "customAttribute_33",
+                "customAttribute_76",
+                "customAttribute_129",
+                "customAttribute_131",
+                "customAttribute_132",
+                "customAttribute_133",
+                "customAttribute_134",
+                "customAttribute_135",
+                "customAttribute_136",
+                "customAttribute_137",
+                "customAttribute_138"
+            ]
+        },
+        "paging": {
+            "@type": "offset",
+            "offset": 0,
+            "limit": 25
+        },
+        "sorting": [
+            {
+                "@type": "field",
+                "field": "uploadDate",
+                "asc": false
+            },
+            {
+                "@type": "relevance",
+                "asc": false
+            }
+        ]
+    },
+    "criteria": {
+        "@type": "and",
+        "subs": [
+            {
+                "@type": "match",
+                "fields": [
+                    "description_multi",
+                    "originalName",
+                    "customAttribute_26",
+                    "customAttribute_27",
+                    "customAttribute_28",
+                    "customAttribute_30",
+                    "customAttribute_31",
+                    "customAttribute_129.value",
+                    "customAttribute_131",
+                    "customAttribute_132",
+                    "customAttribute_133.value",
+                    "customAttribute_134",
+                    "customAttribute_135",
+                    "customAttribute_136",
+                    "colorSpace.type",
+                    "countries.id",
+                    "countries.name_multi",
+                    "documentDimensions.unit",
+                    "keywords_multi",
+                    "language.code",
+                    "language.name_multi",
+                    "extension",
+                    "structuredKeywords.name_multi",
+                    "affiliateNumber",
+                    "id",
+                    "licenseHolderName",
+                    "licenseData.license",
+                    "channelPublications.channelId",
+                    "division.name",
+                    "owner.name",
+                    "themes.name_multi",
+                    "themes.pathIds",
+                    "title_multi",
+                    "vdb.name_multi"
+                ],
+                "value": ""
+            },
+            {
+                "@type": "and",
+                "subs": [
+                    {
+                        "@type": false,
+                        "fields": [
+                            "isVariant"
+                        ]
+                    },
+                    {
+                        "@type": "not",
+                        "criteria": {
+                            "@type": "eq",
+                            "fields": [
+                                "vdb.id"
+                            ],
+                            "long_value": 3
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
