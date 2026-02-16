@@ -24,4 +24,3 @@ forms:
     properties:
       video: !include:/standard-template-kit/includes/dialogs/video/video.yaml
         required: false
-      

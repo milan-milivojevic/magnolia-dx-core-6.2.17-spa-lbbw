@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { EditableArea } from "@magnolia/react-editor";
-// import { BsChevronDown, BsChevronUp } from "react-icons/bs";
+
 import { FaPlus, FaMinus } from "react-icons/fa";
 import styled from 'styled-components';
 

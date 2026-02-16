@@ -9,4 +9,3 @@ properties:
   accordionInnerPaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
   accordionInnerPaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
   accordionInnerPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
-  

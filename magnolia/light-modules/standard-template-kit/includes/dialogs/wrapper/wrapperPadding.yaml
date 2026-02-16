@@ -9,5 +9,3 @@ properties:
   wrapperPaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
   wrapperPaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
   wrapperPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
-    
-  

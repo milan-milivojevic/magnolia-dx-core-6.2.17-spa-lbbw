@@ -111,10 +111,8 @@ function CarouselDividedConfig ({
   }
   
   const carouselDividedImagesStyles = {
-    // borderColor: carouselBorderColor || null,
-    // borderWidth: carouselBorderWidth || null,
-    // borderStyle: carouselBorderStyle || null,
-    // borderRadius: carouselBorderRadius || null,
+    
+    
     maxHeight: carouselHeight || null
   };  
   

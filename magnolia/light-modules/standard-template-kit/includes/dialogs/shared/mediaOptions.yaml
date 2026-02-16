@@ -22,4 +22,3 @@ properties:
     defaultValue: true
     label: Controls
     buttonLabel: "yes/no"
-  

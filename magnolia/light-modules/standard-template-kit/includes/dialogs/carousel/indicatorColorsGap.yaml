@@ -9,4 +9,3 @@ properties:
   indicatorActiveColor: !include:/standard-template-kit/includes/dialogs/basics/textColors/color.yaml
     label: Active Color
   indicatorGap: !include:/standard-template-kit/includes/dialogs/listComponents/includes/gap.yaml
-  

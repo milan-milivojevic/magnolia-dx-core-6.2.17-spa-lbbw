@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   }
 `;
 
-// Resolves possible shapes: Magnolia DAM link object, plain URL string, or common fields.
+
 function resolveImageSrc(img) {
   if (!img) return null;
   if (typeof img === 'string') return img;
@@ -118,7 +118,7 @@ function Image({
     width: "100%"
   }
 
-  // ✅ Safely resolve the src before render to avoid "reading '@link' of undefined"
+  
   const imgSrc = resolveImageSrc(image);
   const altText = (image && image.alt) || imageCaption || "";
 

@@ -57,7 +57,6 @@ function Video ({
   }, [styleName, noStyles, apiBase, restPath, nodeName]);
 
   
-
   const defBgColor = defaultBackColor || configProps?.defaultBackColor || null;
   const hovBgColor = hoverBackColor || configProps?.hoverBackColor || defBgColor;
 

@@ -1,4 +1,4 @@
-/* Common Teaser Styles */
+
 
 .cursorPointer {
   cursor: pointer;
@@ -53,7 +53,6 @@
   width: 100%;
 }
 
-/* Card Teaser Component */
 
 .cardTeaserComponent .image {
   object-fit: cover;
@@ -89,14 +88,11 @@
   border-style: none solid solid solid !important;
 }
 
-/* Carousel Teaser Component */
 
 .carouselTeaser .link {
  z-index: 999;
 }
 
-
-/* Carousel Component */
 
 .carouselComponent {
   display: flex;
@@ -117,7 +113,7 @@
   cursor: pointer;
 }
 
-/*custom*/
+
 .carousel .rightArrowStyles svg {
   border: 2px solid #f3f5f6;
   border-radius: 50%;
@@ -141,8 +137,6 @@
 }
 
 
-
-/*custom*/
 .carousel .leftArrowStyles:hover {
   color: #ab0032;
 }
@@ -168,7 +162,7 @@
   position: absolute;
   bottom: 20px;
   width: 100%;
-  /* transform: translate(0, -50%); */
+  
   font-size: 45px;
   color: #ffffffe6;
   z-index: 1;
@@ -192,17 +186,11 @@
   height: 6px;
 }
 
-/*custom*/
-/* .indicator svg {
-  height: 7px;
-} */
 
-/*custom*/
 .carousel .descriptionLinkWrapper.flex {
   background-color: #ffffffcc;
 }
 
-/* Carousel Divided Component */
 
 .carouselDividedImages {
   display: flex;
@@ -215,8 +203,6 @@
   max-width: 50%;
 }
 
-
-/* Global Layout Component */
 
 .globalLayoutComponentWrapper.configComponents {
   padding: 40px 0;
@@ -282,7 +268,6 @@
   order: 4;
 }
 
-/* Special Layout Component */
 
 .specialLayoutComponent {
   display: grid;
@@ -309,13 +294,10 @@
 }
 
 
-/* Accordion */
-
 .accordionWrapper .accordion {
   display: flex;
 }
 
-/* Corporate Identity Colors */
 
 .corporateIdentityColors {
   display: grid;

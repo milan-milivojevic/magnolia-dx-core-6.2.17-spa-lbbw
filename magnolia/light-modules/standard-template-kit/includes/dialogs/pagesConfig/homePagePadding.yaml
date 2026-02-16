@@ -9,4 +9,3 @@ properties:
   homePagePaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
   homePagePaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
   homePagePaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
-  

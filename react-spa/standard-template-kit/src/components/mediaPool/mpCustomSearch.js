@@ -41,14 +41,7 @@ function MpCustomSearch ({
 
   const [products, setProducts] = useState([]);
 
-  // const assetIdsArray = [];
-
-  // for (const key in assetsIds) {
-  //   if (key.startsWith('assetsIds')) {
-  //     assetIdsArray.push(assetsIds[key].assetId);
-  //   }
-  // }  
-
+  
   const assetIdsArray = assetIds?.split(',').map(assetId => assetId.trim());
 
   const elasticSearch = async () => {

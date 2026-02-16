@@ -9,4 +9,3 @@ properties:
   topNavPaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
   topNavPaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
   topNavPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
-  

@@ -9,4 +9,3 @@ properties:
   marginRight: !include:/standard-template-kit/includes/dialogs/basics/margin/right.yaml
   marginBottom: !include:/standard-template-kit/includes/dialogs/basics/margin/bottom.yaml
   marginLeft: !include:/standard-template-kit/includes/dialogs/basics/margin/left.yaml
-  

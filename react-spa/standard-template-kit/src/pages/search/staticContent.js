@@ -31,15 +31,15 @@ function StaticContentSearchPage (props) {
 
   const handleClick = () => {
     if (tempQuery.length < 2) {
-      // Show the modal
+      
       setShowModal(true);
 
-      // Set a timer to hide the modal after 2 seconds
+      
       setTimeout(() => {
         setShowModal(false);
       }, 2000);
 
-      return; // Exit the function early if the query is too short
+      return; 
     }
 
     setQuery(tempQuery);
@@ -88,19 +88,19 @@ function StaticContentSearchPage (props) {
   (dataArr && dataArr.length>0) && console.log(dataArr);
 
   function highlightText(htmlString, searchTerm) {
-    // Ako nije prosleđen tekst ili termin za pretragu, vrati originalni HTML string
+    
     if (!htmlString || !searchTerm) {
       return htmlString;
     }
   
-    // Inicijalizacija DOMParser-a
+    
     const parser = new DOMParser();
-    // Parsiranje HTML stringa u dokument
+    
     const doc = parser.parseFromString(htmlString, 'text/html');
     
-    // Rekurzivna funkcija za prolazak kroz sve tekstualne čvorove
+    
     function highlightTextNode(node) {
-      if (node.nodeType === 3) { // TEXT_NODE
+      if (node.nodeType === 3) { 
         const matches = [...node.textContent.matchAll(new RegExp(`(${searchTerm})`, 'gi'))];
         if (matches.length > 0) {
           const spanWrapper = document.createElement('span');
@@ -116,14 +116,14 @@ function StaticContentSearchPage (props) {
           node.replaceWith(spanWrapper);
         }
       } else {
-        node.childNodes.forEach(highlightTextNode); // Rekurzivni poziv za svaki čvor
+        node.childNodes.forEach(highlightTextNode); 
       }
     }
   
-    // Početak pretrage od root-a dokumenta
+    
     doc.body.childNodes.forEach(highlightTextNode);
   
-    // Vraćanje HTML stringa sa istaknutim delovima
+    
     return doc.body.innerHTML;
   }
   
@@ -214,10 +214,7 @@ function StaticContentSearchPage (props) {
     }
   });
 
-  // console.log("resultArr");
-  // console.log(resultArr);
-  // }
-
+  
   const Modal = ({ show, children }) => {
     if (!show) {
       return null;

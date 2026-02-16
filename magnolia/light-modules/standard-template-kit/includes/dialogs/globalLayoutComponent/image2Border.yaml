@@ -9,4 +9,3 @@ properties:
   image2BorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
   image2BorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
   image2BorderRadius: !include:/standard-template-kit/includes/dialogs/basics/border/radius.yaml
-  

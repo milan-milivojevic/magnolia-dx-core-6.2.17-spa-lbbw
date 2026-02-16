@@ -9,5 +9,3 @@ properties:
   imagePosition: !include:/standard-template-kit/includes/dialogs/basics/positions/containPosition.yaml
   clickableImage: !include:/standard-template-kit/includes/dialogs/teasersShared/includes/clickableComponent.yaml
     label: Image as Link
-  
-      

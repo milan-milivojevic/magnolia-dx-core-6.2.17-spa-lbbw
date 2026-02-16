@@ -9,4 +9,3 @@ properties:
   subtitlePaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
   subtitlePaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
   subtitlePaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
-  

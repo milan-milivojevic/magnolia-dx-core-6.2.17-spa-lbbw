@@ -25,4 +25,3 @@ datasource:
     - name: PIM
       label: PIM
       value: pim
-    

@@ -27,7 +27,7 @@ CKEDITOR.editorConfig = function( config ) {
         { name: 'Clan-MediumItalic inline', element: 'span', styles: { 'font-family': 'ClanforLBBW-MediumItalic, sans-serif' } },
         { name: 'Clan-BoldItalic inline', element: 'span', styles: { 'font-family': 'ClanforLBBW-BoldItalic, sans-serif' } },
 
-        // Sparkasse fonts
+        
         { name: 'Sparkasse-Lt', element: 'p', styles: { 'font-family': 'Sparkasse_Lt, sans-serif' } },
         { name: 'Sparkasse-LtIt', element: 'p', styles: { 'font-family': 'Sparkasse_LtIt, sans-serif' } },
         { name: 'Sparkasse-Rg', element: 'p', styles: { 'font-family': 'Sparkasse_Rg, sans-serif' } },

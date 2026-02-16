@@ -9,4 +9,3 @@ properties:
   headlinePaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
   headlinePaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
   headlinePaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
-  

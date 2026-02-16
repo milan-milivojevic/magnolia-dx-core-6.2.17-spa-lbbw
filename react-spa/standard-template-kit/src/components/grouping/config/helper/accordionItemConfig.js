@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { EditableArea } from "@magnolia/react-editor";
-// import { BsChevronDown, BsChevronUp } from "react-icons/bs";
+
 import { FaPlus, FaMinus } from "react-icons/fa";
 import styled from 'styled-components';
 
@@ -20,12 +20,10 @@ function AccordionItemConfig ({
   accordionListProps
 }) {
 
-  /* Properties from AccordionList or AccordionConfigList component */
-
+  
   const listProps = [...accordionListProps];
 
-  /* Open/Close Accordion */
-
+  
   const [open, setOpen] = useState(false);
 
   const toggle = () => {

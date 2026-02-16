@@ -14,7 +14,7 @@ export default function CategoriesFilter({onUpdateSelectedCategories, selectedCa
 
   const baseUrl = process.env.REACT_APP_MGNL_HOST_NEW; 
 
-  /* Dohvatanje Filtera */
+  
   useEffect(() => {
     fetch(`${baseUrl}/rest/mp/v1.2/themes`)
       .then((response) => response.json())
@@ -24,7 +24,7 @@ export default function CategoriesFilter({onUpdateSelectedCategories, selectedCa
         setInitialParents(transformedParents);
       })
       .catch((error) => {
-        console.error("Greška prilikom preuzimanja podataka:", error);
+        console.error("Error fetching data:", error);
       });
   }, [selectedCategories]);
 
@@ -49,8 +49,7 @@ export default function CategoriesFilter({onUpdateSelectedCategories, selectedCa
     return mapItems(data);
   };
   
-  /* Otvaranje Filtera i Dropdowna  */
-
+  
   const extractCheckStates = (items) => {
     return items.map(item => {
       return {
@@ -110,8 +109,7 @@ export default function CategoriesFilter({onUpdateSelectedCategories, selectedCa
     }));
   };
 
-  /* Hendlovanje promena stanja Checkbox-ova */
-
+  
   const toggleParentCheckbox = (parentId) => {
     setParents(prevState => prevState.map(parent => {
       if (parent.id === parentId) {
@@ -223,7 +221,6 @@ export default function CategoriesFilter({onUpdateSelectedCategories, selectedCa
     }));
   };
 
-  /* Pakovanje selektovanih vrednosti u niz i zatvaranje filtera */
   
   const applySelection = () => {
     const values = [];
@@ -256,8 +253,7 @@ export default function CategoriesFilter({onUpdateSelectedCategories, selectedCa
     setIsFilterOpen(false);
   };
 
-  /* Restartovanje stanja svih Checkboxova */
-
+  
   const clearAll = () => {
     setParents(initialParents.map(parent => {     
       parent.isChecked = false;
@@ -274,8 +270,7 @@ export default function CategoriesFilter({onUpdateSelectedCategories, selectedCa
     }));
   };
 
-  /* Zatvaranje Filtera */
-
+  
   const resetCheckStates = (items, tempStates) => {
     return items.map((item, index) => {
       return {
@@ -292,7 +287,6 @@ export default function CategoriesFilter({onUpdateSelectedCategories, selectedCa
     setIsFilterOpen(false);
   };
   
-
 
   return (
     <div className="searchFilter categories">

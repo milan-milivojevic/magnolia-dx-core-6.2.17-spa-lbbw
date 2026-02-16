@@ -9,4 +9,3 @@ properties:
   descriptionPaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
   descriptionPaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
   descriptionPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
-  

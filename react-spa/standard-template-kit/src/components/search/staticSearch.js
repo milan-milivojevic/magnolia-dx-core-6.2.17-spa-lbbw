@@ -4,9 +4,7 @@ import '../../css.css';
 import { ReactComponent as ArrowsIcon } from '../../images/home/ArrowsIcon.svg';
 import ClipLoader from 'react-spinners/ClipLoader';
 
-/* ──────────────────────────────────────────────────────────────── */
-/* Highlighter factory                                              */
-/* ──────────────────────────────────────────────────────────────── */
+
 const makeHighlighter = (term) => {
   const re = new RegExp(`(${term})`, 'gi');
 
@@ -15,7 +13,7 @@ const makeHighlighter = (term) => {
 
     const doc = new DOMParser().parseFromString(html, 'text/html');
 
-    /* 1. Mark every match */
+    
     (function walk(node) {
       if (node.nodeType === 3) {
         const parts = node.textContent.split(re);
@@ -33,12 +31,12 @@ const makeHighlighter = (term) => {
       } else Array.from(node.childNodes).forEach(walk);
     })(doc.body);
 
-    /* 2. Drop <p> without <mark> */
+    
     doc.querySelectorAll('p').forEach((p) => {
       if (!p.innerHTML.includes('<mark')) p.remove();
     });
 
-    /* 3. Drop “h1–h6” with no <mark> AND no later marked sibling */
+    
     doc.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach((h) => {
       if (h.innerHTML.includes('<mark')) return;
       let sib = h.nextElementSibling,
@@ -58,9 +56,7 @@ const makeHighlighter = (term) => {
   };
 };
 
-/* ──────────────────────────────────────────────────────────────── */
-/* Component                                                        */
-/* ──────────────────────────────────────────────────────────────── */
+
 function StaticSearch({ globalQuery }) {
   const apiBase = getAPIBase();
   const restPath = process.env.REACT_APP_MGNL_API_SEARCH;
@@ -71,7 +67,7 @@ function StaticSearch({ globalQuery }) {
   const [query, setQuery] = useState('');
   const [loading, setLoading] = useState(false);
 
-  /* ── Sync with external input ── */
+  
   useEffect(() => {
     if (!globalQuery || globalQuery.length < 2) {
       setQuery('');
@@ -85,7 +81,7 @@ function StaticSearch({ globalQuery }) {
     fetchData(globalQuery);
   }, [globalQuery]);
 
-  /* ── Fetch data (single request) ── */
+  
   const fetchData = (q) => {
     setLoading(true);
 
@@ -108,14 +104,14 @@ function StaticSearch({ globalQuery }) {
       .finally(() => setLoading(false));
   };
 
-  /* ── Deduplicate by @id ── */
+  
   const uniq = [...descArr, ...headArr, ...titleArr].filter(
     (n, i, a) => i === a.findIndex((t) => t['@id'] === n['@id'])
   );
 
   const highlight = makeHighlighter(query);
 
-  /* ── Order / transform to uniform objects ── */
+  
   const ordered = uniq
     .map((d) => {
       const makeEntry = (path, baseName, anchor = null) => {
@@ -126,7 +122,7 @@ function StaticSearch({ globalQuery }) {
           d.headline || d.title || ''
         );
 
-        /* eliminate snippets with neither description nor title marked */
+        
         if (!markDesc && !markTitle) return null;
 
         const linkLabel = anchor ? `${baseName}#${anchor}` : baseName;
@@ -166,24 +162,24 @@ function StaticSearch({ globalQuery }) {
       const last = parts.pop();
       return makeEntry(fullPath, last);
     })
-    .filter(Boolean); // remove nulls
+    .filter(Boolean); 
 
-  /* ── Filter tech pages ── */
+  
   const filtered = ordered.filter(
     (o) =>
       !o.path.includes('/Config-Pages/') &&
       !o.path.includes('/Components-Library/')
   );
 
-  /* ── Group by full path (anchor kept) ── */
+  
   const grouped = [];
   filtered.forEach((o) => {
     const descPlain = (o.description || '').replace(/<[^>]*>/g, '').trim();
-    if (!descPlain) return; // skip totally blank desc
+    if (!descPlain) return; 
 
     const ex = grouped.find((x) => x.path === o.path);
     if (ex) {
-      /* avoid exact duplicates */
+      
       const dup = [...Array(ex.count)].some(
         (_, i) =>
           ex[`title${i + 1}`] === o.title &&
@@ -206,10 +202,7 @@ function StaticSearch({ globalQuery }) {
     }
   });
 
-  /* ──────────────────────────────────────────────────────────────── */
-  /* Render                                                          */
-  /* ──────────────────────────────────────────────────────────────── */
-
+  
   if (loading) {
     return (
       <div className="staticSearch search-spinner">
@@ -217,7 +210,7 @@ function StaticSearch({ globalQuery }) {
           loading
           size={50}
           color="#3aaa35"
-          cssOverride={{ borderWidth: '3px' }} // 3 px ring width
+          cssOverride={{ borderWidth: '3px' }} 
         />
       </div>
     );

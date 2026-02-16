@@ -14,25 +14,25 @@ class PageLoader extends React.Component {
 
     let path = nodeName + this.props.pathname.replace(new RegExp('(.*' + nodeName + '|.html)', 'g'), '');
 
-    // skloni bilo koji jezik iz putanje (ako postoji)
+    
     languages.forEach((lang) => {
       path = removeCurrentLanguage(path, lang);
     });
 
-    // uvek eksplicitno reci Magnoliji jezik
+    
     path += (path.includes('?') ? '&' : '?') + 'lang=' + currentLanguage;
 
     return path;
   };
 
   loadPage = async () => {
-    // Bail out if already loaded content.
+    
     if (this.state.pathname === this.props.pathname) return;
 
     const apiBase = getAPIBase();
 
     const pagePath = this.getPagePath();
-    // console.log('pagePath:' + pagePath);
+    
     const config = {
       headers: {},
     };
@@ -74,17 +74,14 @@ class PageLoader extends React.Component {
 
     const pageResponse = await fetch(fullContentPath, config);
     const pageJson = await pageResponse.json();
-    // console.log('page content: ', pageJson);
-
-    // const templateId = pageJson['mgnl:template'];
-    // console.log('templateId:', templateId);
+    
 
     let templateJson = {};
 
     if (window.location.search.includes('mgnlPreview')) {
       const templateResponse = await fetch(apiBase + process.env.REACT_APP_MGNL_API_TEMPLATES + pagePath);
       templateJson = await templateResponse.json();
-      // console.log('definition:', templateJson);
+      
     }
 
     this.setState({
@@ -105,10 +102,8 @@ class PageLoader extends React.Component {
 
   render() {
     if (this.state.init) {
-      // console.log('config:', config);
-      //const isDevMode = process.env.NODE_ENV === 'development';
-      //console.log("n:" + process.env.NODE_ENV)
-
+      
+      
       return (
         <EditablePage
           templateAnnotations={this.state.templateAnnotations || {}}

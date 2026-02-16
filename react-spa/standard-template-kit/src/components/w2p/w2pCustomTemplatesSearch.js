@@ -106,10 +106,8 @@ function W2PCustomTemplatesSearch ({
 
   const idsSearch = async () => {
     try {
-      // const templatesData = await Promise.all(templatesIdsArray.map(async (templateId) => {
-      //   const response = await idSearch(templateId);
-      //   return response.rows;
-      // }));
+      
+      
       const response = await idSearch(templatesIdsArray);
       const flattenedData = response.flat();
       setProducts(flattenedData);

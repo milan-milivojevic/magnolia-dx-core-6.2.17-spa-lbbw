@@ -9,4 +9,3 @@ properties:
   labelPaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
   labelPaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
   labelPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
-  

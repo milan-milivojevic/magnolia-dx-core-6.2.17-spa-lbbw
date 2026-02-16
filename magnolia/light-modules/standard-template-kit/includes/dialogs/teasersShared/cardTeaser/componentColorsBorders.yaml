@@ -30,4 +30,3 @@ properties:
   componentHoverBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml
   componentBorderHoverColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml
     label: Hover Border Color
-  

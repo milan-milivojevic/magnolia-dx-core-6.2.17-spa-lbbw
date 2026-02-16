@@ -54,18 +54,7 @@ export default function TagsFilter({ onUpdateSelectedTags, selectedTags }) {
     };
   }, []);
 
-  // const mapData = (data) => {
-  //   const mappedItems = data.map(item => {
-  //     let mappedItem = {
-  //       id: item.group,
-  //       isChecked: selectedTags?.includes(item.id) // Check if the ID exists in the selectedKeywords
-  //     };
   
-  //     return mappedItem;
-  //   });
-  //   return mappedItems;
-  // };
-
   const toggleFilter = () => {
     if (!isFilterOpen) {
       const tempCheckStates = parents.map(parent => parent.isChecked);

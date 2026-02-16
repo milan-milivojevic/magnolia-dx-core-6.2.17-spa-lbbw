@@ -211,5 +211,4 @@ function CorporateFontsConfig ({
 }
 
 
-
 export default CorporateFontsConfig;

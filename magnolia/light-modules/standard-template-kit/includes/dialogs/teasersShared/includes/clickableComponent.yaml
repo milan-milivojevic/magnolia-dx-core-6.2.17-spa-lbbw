@@ -13,4 +13,3 @@ datasource:
     - name: "no"
       label: "No"
       value: false
-      

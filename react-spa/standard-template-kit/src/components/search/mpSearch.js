@@ -152,7 +152,7 @@ function MpSearch ({
     });
   }, [selectedCategories, selectedSuffixes, selectedTags, selectedVdbs]);
 
-  // Function to update selectedCategories state
+  
   const updateSelectedCategories = (selectedValues) => {
     setSelectedCategories(selectedValues);
   };
@@ -278,7 +278,7 @@ function MpSearch ({
         <div className="searchFilters">
           <CategoriesFilter onUpdateSelectedCategories={updateSelectedCategories} selectedCategories={selectedCategories}/>
           <FileInfoFilter onUpdateSelectedSuffixes={updateSelectedSuffixes} selectedSuffixes={selectedSuffixes}/>
-          {/* <VdbFilter onUpdateSelectedVdbs={updateSelectedVdbs} selectedVdbs={selectedVdbs}/> */}
+          {}
           <TagsFilter onUpdateSelectedTags={updateSelectedTags} selectedTags={selectedTags}/>
         </div>
       </div>      

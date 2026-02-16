@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { EditableArea } from "@magnolia/react-editor";
 import { getAPIBase } from '../../helpers/AppHelpers';
-// import { BsChevronDown, BsChevronUp } from "react-icons/bs";
+
 import { FaPlus, FaMinus } from "react-icons/fa";
 import styled from 'styled-components';
 

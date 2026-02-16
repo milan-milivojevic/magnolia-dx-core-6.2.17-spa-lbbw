@@ -9,4 +9,3 @@ properties:
   groupPaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
   groupPaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
   groupPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
-  

@@ -91,7 +91,7 @@ function App() {
   const isPagesApp = window.location.search.includes("mgnlPreview");
   const editMode = isPagesApp ? true : false;
   
-  /* Rendering Languages */
+  
   function renderLanguages() {
     const currentLanguage = getCurrentLanguage();    
     const languages = getLanguages();
@@ -129,24 +129,12 @@ function App() {
   const [query, setQuery] = useState("");  
   const [errorMessage, setErrorMessage] = useState(""); 
 
-  /* Setting top position and min-height of Page Content */
+  
   const headerRef = React.useRef(null);  
   const topNavRef = React.useRef(null); 
   const pageRef = React.useRef(null);
   
-  // React.useEffect(() => {
-  //   var interval = setInterval(() => {    
-  //     const headerHeight = headerRef.current.getBoundingClientRect().height;
-  //     const topNavHeight = topNavRef.current.getBoundingClientRect().height;
-  //     const topHeight = headerHeight + topNavHeight;
-  //     topNavRef.current.style.top = headerHeight + 'px';
-  //     pageRef.current.style.top = topHeight + 'px';
-  //     pageRef.current.style.minHeight = `calc(100vh - ${topHeight}px)`;
-  //   }, 300)
-  //   setTimeout(function( ) { clearInterval( interval ); }, 6000);
-  // }, []);
-
-  /* Getting props from headerConfig for setting logo and logo link */
+  
   const baseUrl = process.env.REACT_APP_MGNL_HOST_NEW; 
   const apiBase = getAPIBase();
   const restPath = process.env.REACT_APP_MGNL_API_PAGES;
@@ -183,7 +171,7 @@ function App() {
   useEffect(() => {
     fetch(`${baseUrl}/rest/administration/users/_current`)
       .then(response => {
-        if (!response.ok) { // Ako status nije OK (npr. 403)
+        if (!response.ok) { 
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         return response.json();
@@ -191,16 +179,16 @@ function App() {
       .then(data => {
         setUserData(data);
         setIsUserLogged(!!data?.login);
-        setIsUserLoaded(true); // Podaci su učitani
+        setIsUserLoaded(true); 
       })
       .catch(error => {
-        // U slučaju greške, označavamo da su korisnički podaci učitani i da korisnik nije ulogovan
+        
         setIsUserLogged(false);
         setIsUserLoaded(true);
       });
   }, []);  
 
-  /* Setting pathname */
+  
   const [pathname, setPathname] = useState(window.location.pathname);
 
   useEffect(() => {
@@ -217,22 +205,10 @@ function App() {
     };
   }, []);
 
-  // ???????????????????????????????
-  // useEffect(() => {
-  //   if (window.location.href.includes('/Search-Pages') && !editMode) {
-  //     const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-  //     window.history.pushState({path:newurl}, '', newurl);
-  //   }
-  // }, []);
-
-  /* Questionable part of the code because of querySelector */
+  
   var leftNavInterval = setInterval(() => {
 
-    /* Adding active class on active nav item elemets */
-    // const links = document.querySelectorAll('.menu-item > button > a');
-    // const topNavLinks = document.querySelectorAll('.topNav .menu-item > button > a');
-    // const topLinks = document.querySelectorAll('.topNav .level-1.menu-item > button > a');
-
+    
     const leftLinks = document.querySelectorAll('.leftHandNav .menu-item > button > a');
 
     function setActiveLHNLink(link) {
@@ -283,61 +259,6 @@ function App() {
     } 
 
 
-    // function setActiveLink(link) {
-    //   links.forEach((link) => {
-    //     link.classList.remove('active');
-    //   });
-    //   leftLinks.forEach((leftLink) => {
-    //     leftLink.parentNode.parentNode.parentNode.parentNode.classList.remove('active');
-    //   });
-    //   link.classList.add('active');
-    //   link.parentNode.parentNode.parentNode.parentNode.classList.add('active');
-    //   link.parentNode.parentNode.classList.add('active');
-    // }
-
-    // function setActiveTopLink(link) {
-    //   topNavLinks.forEach((link) => {
-    //     link.classList.remove('active');
-    //   });
-    //   topLinks.forEach((topLink) => {
-    //     topLink.parentNode.parentNode.parentNode.parentNode.classList.remove('active');
-    //   });
-    //   link.classList.add('active');
-    //   link.parentNode.parentNode.parentNode.parentNode.classList.add('active');  
-    // }
-
-    // const link = Array.from(links).find(link => link.href === window.location.href);
-    // if (link) {
-    //   setActiveLink(link);
-    // }
-    // const topNavLink = Array.from(topNavLinks).find(link => link.href === window.location.href);
-    // if (topNavLink) {
-    //   setActiveLink(topNavLink);
-    // }
-    
-    // const topLink = Array.from(topLinks).find(link => link.href === window.location.href);
-    // if (topLink) {
-    //   setActiveTopLink(topLink);
-    // }
-
-    // /* Setting all chevrons in the same place */
-    // const navItems = document.querySelectorAll('.leftHandNav ul li a');
-    // // console.log(navItems);
-    // let longestNavItemWidth = 0;
-    // // console.log(longestNavItemWidth);
-    // navItems.forEach(navItem => {
-    //   const navItemWidth = navItem.getBoundingClientRect().width;
-    //   // console.log(navItemWidth);
-    //   if (navItemWidth > longestNavItemWidth) {
-    //     longestNavItemWidth = navItemWidth;
-    //   }
-    // });
-    // // console.log(longestNavItemWidth);
-    // navItems.forEach(navItem => {
-    //   navItem.style.width = longestNavItemWidth + 'px';
-    // });
-
-      /* Navigation BuxFix Firefox */
       var uls = document.querySelectorAll('.leftHandNav ul');
       for (var i = 0; i < uls.length; i++) {
         if (uls[i].querySelector('a.active')) {
@@ -458,21 +379,7 @@ function App() {
       <ForwardedTopNav ref={topNavRef}></ForwardedTopNav>    
       <div className='pageContainer' ref={pageRef}>
         <PageLoader pathname={pathname} />
-        {/* <footer>
-          <div className='links'>
-            <div>
-              <div className='heading'>CONTACT</div>
-              <a href="mailto:hmbrandmaker@houstonmethodist.org" target="_blank">HM Brandmaker</a>
-              <a href="mailto:creative-approvals@houstonmethodist.org" target="_blank">Creative Approvals</a>
-            </div>            
-            <div>
-              <div className='heading'>WEBSITES</div>
-              <a href="http://www.tmh.tmhs/" target="_blank">HM Intranet</a>
-              <a href="http://www.houstonmethodist.org/" target="_blank">houstonmethodist.org</a>
-            </div>
-          </div>
-          <div className='footer'>2021. Houston Methodist, Houston, TX. All rights reserved.</div>
-        </footer> */}
+        {}
       </div>
 
     </div>

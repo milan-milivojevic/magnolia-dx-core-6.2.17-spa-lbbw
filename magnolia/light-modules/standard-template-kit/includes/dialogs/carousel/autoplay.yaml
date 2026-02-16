@@ -9,4 +9,3 @@ datasource:
     - name: true
       value: true
       label: Yes
-    

@@ -61,11 +61,6 @@ function W2PTemplatesCarousel({
   const editMode = isPagesApp ? true : false;
   
 
-  // const initialSortOrder = sortOrderTemplates ? sortOrderTemplates : "creationDate,desc";
-  // const splitedSortOrder = initialSortOrder.split(',');
-  // const initialSortType = splitedSortOrder[0];
-  // const initialSortDirection = splitedSortOrder[1] === "asc" ? "asc" : "desc";
-
   const initialSortOrder = sortOrderTemplates || null;
   const splitedSortOrder = initialSortOrder ? initialSortOrder.split(',') : [];
   const initialSortType = splitedSortOrder[0] || null;
@@ -89,14 +84,14 @@ function W2PTemplatesCarousel({
         breakpoint: 1440,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 1, // Na manjim ekranima prikazuje samo 1 aset istovremeno
+          slidesToScroll: 1, 
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1, // Na manjim ekranima prikazuje samo 1 aset istovremeno
+          slidesToScroll: 1, 
         },
       },
     ],
@@ -107,7 +102,7 @@ function W2PTemplatesCarousel({
 
   const resetTransform = () => {
     var interval = setInterval(() => {
-      // Delay the transformation to give react-slick time to update
+      
       const slickList = sliderRef.current.innerSlider.list;
       if (slickList) {
         const slickTrack = slickList.querySelector('.slick-track');
@@ -185,10 +180,8 @@ function W2PTemplatesCarousel({
 
   const idsSearch = async () => {
     try {
-      // const templatesData = await Promise.all(templatesIdsArray.map(async (templateId) => {
-      //   const response = await idSearch(templateId);
-      //   return response.rows;
-      // }));
+      
+      
       const response = await idSearch(templatesIdsArray, initialSortType || "creationDate", initialSortDirection || "desc", size || templatesIdsArrayLength);
       const flattenedData = response.rows.flat();
       setProducts(flattenedData);
@@ -198,7 +191,7 @@ function W2PTemplatesCarousel({
   };
 
   useEffect(() => {
-    // Prvi useEffect koji postavlja aclValue
+    
     if (editMode === false && basicAclCheck === false) {
       async function fetchData() {
         try {
@@ -214,9 +207,9 @@ function W2PTemplatesCarousel({
   });
 
   useEffect(() => {
-    // Provera da li je aclValue postavljen na true
+    
     if (aclValue === true) {
-      // Ako je aclValue true, izvrši sledeće akcije
+      
       templateIds && (!templatesSearchType || (templatesSearchType !== "favorites" && templatesSearchType !== "used" && templatesSearchType !== "new")) && idsSearch();
       linkToSearchResult && templatesSearchType && templatesSearchType === "searchLink" && templatesSearch();
       templatesSearchType && templatesSearchType === "favorites" && getFavouriteTemplates(calculatedSize);
@@ -246,7 +239,7 @@ function W2PTemplatesCarousel({
   } 
 
   if (editMode === false && aclValue === false && basicAclCheck === false) {
-    return null; // Izlazak iz komponente ako aclCheck vrati false
+    return null; 
   }
 
   return (

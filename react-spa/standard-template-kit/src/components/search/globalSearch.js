@@ -77,9 +77,7 @@ function GlobalSearch({
           <button className={currentView === 'mp' ? "active" : null} onClick={() => setCurrentView('mp')}>
             Mediendatenbank Suche
           </button>
-          {/* <button className={currentView === 'w2p' ? "active" : null} onClick={() => setCurrentView('w2p')}>
-               W2P Suche
-             </button> */}            
+          {}            
         </div>
 
         <div className="flex headerSearch">
@@ -103,7 +101,6 @@ function GlobalSearch({
       </div>
 
       
-
       {currentView === 'mp' &&
         <MpSearch
           globalQuery={query}

@@ -33,7 +33,6 @@ form:
     subtitleTextStyles: !include:/standard-template-kit/includes/dialogs/corporateIcons/subtitleTextStyles.yaml
     subtitlePadding: !include:/standard-template-kit/includes/dialogs/corporateIcons/subtitlePadding.yaml
     
-    
   layout:
     $type: tabbedLayout
     tabs:

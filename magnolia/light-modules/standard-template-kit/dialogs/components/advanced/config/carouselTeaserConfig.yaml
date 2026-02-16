@@ -56,7 +56,6 @@ form:
     linkStyleWithCheckbox: !include:/standard-template-kit/includes/dialogs/teasersShared/styleWithCheckbox/link.yaml
     styleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
     
-
   layout:
     $type: tabbedLayout
     tabs:
@@ -113,5 +112,3 @@ form:
           - name: linkBackground
           - name: linkStyles                      
           - name: linkPadding  
-         
-        

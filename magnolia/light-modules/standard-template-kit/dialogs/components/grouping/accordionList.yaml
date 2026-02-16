@@ -27,7 +27,6 @@ form:
     accordionBorder: !include:/standard-template-kit/includes/dialogs/accordion/border.yaml
     backgroundColors: !include:/standard-template-kit/includes/dialogs/accordion/backgroundColors.yaml
     
-
   layout:
     $type: tabbedLayout
     tabs:
@@ -51,6 +50,3 @@ form:
           - name: chevronStyles
           - name: accordionBorder  
           - name: backgroundColors
-            
-          
-        
