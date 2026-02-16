@@ -11,4 +11,3 @@ properties:
     label: Default Label Color
   labelHoverColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml
     label: Hover Label Color
-  

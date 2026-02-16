@@ -9,5 +9,3 @@ properties:
   wrapperMarginRight: !include:/standard-template-kit/includes/dialogs/basics/margin/right.yaml
   wrapperMarginBottom: !include:/standard-template-kit/includes/dialogs/basics/margin/bottom.yaml
   wrapperMarginLeft: !include:/standard-template-kit/includes/dialogs/basics/margin/left.yaml
-    
-  

@@ -16,4 +16,3 @@ properties:
     label: Show First Level Only
     buttonLabel: yes/no
     $type: checkBoxField
-    

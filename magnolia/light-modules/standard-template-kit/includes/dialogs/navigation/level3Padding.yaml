@@ -9,4 +9,3 @@ properties:
   l3PaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
   l3PaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
   l3PaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
-  

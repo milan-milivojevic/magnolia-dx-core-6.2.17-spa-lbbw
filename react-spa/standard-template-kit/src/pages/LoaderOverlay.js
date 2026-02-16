@@ -10,7 +10,7 @@ export function LoaderOverlay({ loading }) {
   );
 }
 
-/** Simple hook: returns `loading` while images inside rootRef are loading */
+
 export function useImagesLoaded(rootRef) {
   const [loading, setLoading] = useState(true);
 

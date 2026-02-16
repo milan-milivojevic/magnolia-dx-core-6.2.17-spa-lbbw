@@ -9,4 +9,3 @@ properties:
   pBigPaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
   pBigPaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
   pBigPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
-  

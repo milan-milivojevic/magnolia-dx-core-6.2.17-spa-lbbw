@@ -29,4 +29,3 @@ properties:
     label: Indent
     placeholder: 50px
     $type: textField
-  

@@ -9,4 +9,3 @@ properties:
   image1PaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
   image1PaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
   image1PaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
-  

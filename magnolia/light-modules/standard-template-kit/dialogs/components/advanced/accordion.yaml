@@ -14,7 +14,6 @@ form:
     backgroundWidthPosition: !include:/standard-template-kit/includes/dialogs/accordion/backgroundWidthPosition.yaml
     accordionBorder: !include:/standard-template-kit/includes/dialogs/accordion/border.yaml
    
-  
   layout:
     $type: tabbedLayout
     tabs:

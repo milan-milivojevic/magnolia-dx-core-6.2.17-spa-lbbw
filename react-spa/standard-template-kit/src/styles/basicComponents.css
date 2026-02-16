@@ -1,4 +1,4 @@
-/*Media Components */
+
 
 .audioComponent,
 .videoComponent,
@@ -6,13 +6,11 @@
     display: flex;
 }
 
-/* Video Component */
 
 video {
   max-width: 100%;
 }
 
-/*Link Component*/
 
 .link {
     display: flex;

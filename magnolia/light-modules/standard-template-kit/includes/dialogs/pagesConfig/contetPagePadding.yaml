@@ -9,4 +9,3 @@ properties:
   contentPagesPaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
   contentPagesPaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
   contentPagesPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
-  

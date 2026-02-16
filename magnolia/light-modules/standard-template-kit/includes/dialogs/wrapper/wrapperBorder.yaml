@@ -9,4 +9,3 @@ properties:
   wrapperBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
   wrapperBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
   wrapperBorderRadius: !include:/standard-template-kit/includes/dialogs/basics/border/radius.yaml
-  

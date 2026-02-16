@@ -9,4 +9,3 @@ properties:
   dropdownPaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
   dropdownPaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
   dropdownPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
-  

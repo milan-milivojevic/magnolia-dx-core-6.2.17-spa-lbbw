@@ -9,4 +9,3 @@ properties:
   descriptionBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
   descriptionBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
   descriptionBorderRadius: !include:/standard-template-kit/includes/dialogs/basics/border/radius.yaml
-  

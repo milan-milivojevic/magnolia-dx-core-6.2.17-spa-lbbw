@@ -10,4 +10,3 @@ properties:
   imagePosition: !include:/standard-template-kit/includes/dialogs/image/includes/position.yaml  
   imagesAlignment: !include:/standard-template-kit/includes/dialogs/basics/positions/verticalAlignment.yaml
     label: Vertical Alignment
-  

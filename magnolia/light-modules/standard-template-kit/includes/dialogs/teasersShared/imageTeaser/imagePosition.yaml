@@ -6,4 +6,3 @@ itemProvider:
   $type: currentItemProvider
 properties:
   backgroundImagePosition: !include:/standard-template-kit/includes/dialogs/basics/positions/containPosition.yaml
-      

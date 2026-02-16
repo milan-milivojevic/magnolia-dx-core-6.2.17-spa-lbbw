@@ -13,4 +13,3 @@ properties:
     label: Hide Left Border
     buttonLabel: yes/no
     $type: checkBoxField
-    

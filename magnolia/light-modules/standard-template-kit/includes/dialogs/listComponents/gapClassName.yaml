@@ -9,4 +9,3 @@ properties:
   columnsAlignment: !include:/standard-template-kit/includes/dialogs/basics/positions/verticalAlignment.yaml
     label: Columns Vertical Alignment
   className: !include:/standard-template-kit/includes/dialogs/listComponents/includes/className.yaml
-  

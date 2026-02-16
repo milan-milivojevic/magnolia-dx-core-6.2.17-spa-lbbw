@@ -9,4 +9,3 @@ properties:
   image1BorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
   image1BorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
   image1BorderRadius: !include:/standard-template-kit/includes/dialogs/basics/border/radius.yaml
-  

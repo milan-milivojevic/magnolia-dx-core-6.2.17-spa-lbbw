@@ -16,7 +16,6 @@ form:
     linkPadding: !include:/standard-template-kit/includes/dialogs/link/padding.yaml
     linkBorder: !include:/standard-template-kit/includes/dialogs/link/border.yaml
     
-
   layout:
     $type: tabbedLayout
     tabs:

@@ -34,7 +34,6 @@ datasource:
       value: ClanforLBBW-BoldItalic
       label: ClanforLBBW-BoldItalic
 
-    # Sparkasse fonts
     - name: Sparkasse_Lt
       value: Sparkasse_Lt
       label: Sparkasse_Lt

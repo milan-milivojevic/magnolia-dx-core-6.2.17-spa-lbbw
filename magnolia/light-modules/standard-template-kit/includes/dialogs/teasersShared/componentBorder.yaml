@@ -9,4 +9,3 @@ properties:
   componentBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
   componentBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
   componentBorderRadius: !include:/standard-template-kit/includes/dialogs/basics/border/radius.yaml
-  

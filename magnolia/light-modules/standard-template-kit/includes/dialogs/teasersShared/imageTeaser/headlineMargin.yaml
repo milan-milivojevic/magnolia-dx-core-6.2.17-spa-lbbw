@@ -9,5 +9,3 @@ properties:
   headlineMarginRight: !include:/standard-template-kit/includes/dialogs/basics/margin/right.yaml
   headlineMarginBottom: !include:/standard-template-kit/includes/dialogs/basics/margin/bottom.yaml
   headlineMarginLeft: !include:/standard-template-kit/includes/dialogs/basics/margin/left.yaml
-    
-  

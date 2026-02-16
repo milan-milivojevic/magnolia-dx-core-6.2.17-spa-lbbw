@@ -161,7 +161,6 @@ function BorderTeaser ({
   }, [linkStyleName, linkNoStyles, configProps?.linkStyleName, apiBase, restPath, nodeName]);
 
   
-
   const toggleLinkModal = (e) => {
     setShowLinkModal(!showLinkModal);
     e.preventDefault();

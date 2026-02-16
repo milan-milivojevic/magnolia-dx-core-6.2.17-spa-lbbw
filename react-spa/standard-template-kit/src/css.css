@@ -131,8 +131,6 @@ body {
 }
 
 
-
-
 * {
   box-sizing: border-box;
 }
@@ -142,7 +140,6 @@ p {
 }
 
 
-
 .editMode .mgnlEditor {
   display: flex !important;
 }
@@ -150,11 +147,6 @@ p {
 .editMode .mgnlEditor.mgnlPlaceholder {
   display: block !important;
 }
-
-
-
-
-
 
 
 .configComponentsPage .titles { 
@@ -198,12 +190,6 @@ p {
 display: flex;
 flex-direction: column;
 }
-
-
-
-
-
-
 
 
 .corporateIcons .iconsWrapper {
@@ -259,19 +245,12 @@ flex-direction: column;
   width: 250px;
 }
 
-/* a, figcaption {
-  font-family: 'Sohne Buch';
-} */
 
 a.link svg {
   margin-left: 20px;
 }
 
 
-
 .linkComponent {
   min-width: fit-content;
 }
-
-
-

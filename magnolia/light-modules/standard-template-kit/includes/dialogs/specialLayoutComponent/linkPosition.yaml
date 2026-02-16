@@ -16,4 +16,3 @@ datasource:
     - name: right
       label: Right
       value: right
-      

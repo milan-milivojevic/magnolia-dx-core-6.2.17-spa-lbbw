@@ -9,4 +9,3 @@ properties:
   lhnPagesPaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
   lhnPagesPaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
   lhnPagesPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
-  

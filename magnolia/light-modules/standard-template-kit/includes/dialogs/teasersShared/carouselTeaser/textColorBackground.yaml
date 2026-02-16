@@ -15,5 +15,3 @@ properties:
     label: Title Arrows Height
   descBackground: !include:/standard-template-kit/includes/dialogs/teasersShared/includes/descriptionBackground.yaml
     label: Description Background Color
-  
-  

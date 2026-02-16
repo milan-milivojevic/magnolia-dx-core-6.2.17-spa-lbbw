@@ -10,5 +10,3 @@ properties:
   indicatorBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
   indicatorActiveBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
     label: Active Border Color
-  
-  

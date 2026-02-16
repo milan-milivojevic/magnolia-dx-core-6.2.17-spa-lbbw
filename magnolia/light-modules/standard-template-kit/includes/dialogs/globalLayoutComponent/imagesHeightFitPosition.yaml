@@ -10,4 +10,3 @@ properties:
   imagesHeight: !include:/standard-template-kit/includes/dialogs/basics/height.yaml
   imagesFit: !include:/standard-template-kit/includes/dialogs/image/includes/fit.yaml
   imagesPosition: !include:/standard-template-kit/includes/dialogs/image/includes/position.yaml  
-      

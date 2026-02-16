@@ -15,7 +15,6 @@ form:
           title: !include:/standard-template-kit/includes/dialogs/tabs/title.yaml
             required: true
 
-    
     titleDropdowns: !include:/standard-template-kit/includes/dialogs/tabs/titleDropdowns.yaml
     titleStyles: !include:/standard-template-kit/includes/dialogs/tabs/titleStyles.yaml
     titleColors: !include:/standard-template-kit/includes/dialogs/tabs/titleColors.yaml
@@ -28,7 +27,6 @@ form:
     groupWidthPosition: !include:/standard-template-kit/includes/dialogs/tabs/groupWidthPosition.yaml
     groupPaddings: !include:/standard-template-kit/includes/dialogs/tabs/groupPaddings.yaml
     
-
   layout:
     $type: tabbedLayout
     tabs:
@@ -52,6 +50,3 @@ form:
           - name: tabsBackgrounds
           - name: groupWidthPosition
           - name: groupPaddings
-          
-          
-        

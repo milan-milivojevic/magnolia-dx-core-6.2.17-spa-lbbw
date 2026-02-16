@@ -55,8 +55,7 @@ function AccordionListConfig ({
   accordionNoStyles
 }) {
   
-  /* Copy Style Name Functionality */
-
+  
   const copyRef = useRef(null);
 
   const copyStyleName = () => {
@@ -64,8 +63,7 @@ function AccordionListConfig ({
     navigator.clipboard.writeText(copyText);
   };
 
-  /* Getting Properties from AccordionConfig component */
-
+  
   const apiBase = getAPIBase();
   const restPath = process.env.REACT_APP_MGNL_API_PAGES;
   const nodeName = process.env.REACT_APP_MGNL_APP_BASE;    
@@ -86,16 +84,13 @@ function AccordionListConfig ({
       });
   }, [accordionStyleName, accordionNoStyles, apiBase, restPath, nodeName]);
 
-  /* Creating titles & accordionComponents list which will be sent to AccordionItem component */
-
+  
   const titles = [];
   for (let i = 0; i <= 20; i++) {
     titles.push(multi[`multi${i}`]?.title);
   }
   const accordionComponents = [accordionComponents1, accordionComponents2, accordionComponents3, accordionComponents4, accordionComponents5, accordionComponents6, accordionComponents7, accordionComponents8, accordionComponents9, accordionComponents10, accordionComponents11, accordionComponents12, accordionComponents13, accordionComponents14, accordionComponents15, accordionComponents16, accordionComponents17, accordionComponents18, accordionComponents19, accordionComponents20];
 
-
-  /* Properties to send to the AcordionItem component */
 
   const accordionListProps = [{
     accordionInnerPaddingTop: accordionInnerPaddingTop || accordionConfigProps?.accordionInnerPaddingTop || null,

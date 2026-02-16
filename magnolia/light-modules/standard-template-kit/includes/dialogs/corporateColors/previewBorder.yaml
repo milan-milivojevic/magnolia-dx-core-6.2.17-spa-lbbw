@@ -16,4 +16,3 @@ datasource:
     - name: solid3
       value: "solid 3px"
       label: "solid 3px"
-    

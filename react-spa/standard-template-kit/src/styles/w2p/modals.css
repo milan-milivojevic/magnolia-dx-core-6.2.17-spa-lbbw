@@ -1,4 +1,4 @@
-/*w2p Card */
+
 
 button.isFavourite svg {
     fill: #37c391;
@@ -16,8 +16,6 @@ button.notFavourite:hover svg {
     fill: #37c391;
 }
 
-
-/* Detail modal */
 
 .closeButtonWrapper.w2p {
     justify-content: space-between;
@@ -46,7 +44,6 @@ button.notFavourite:hover svg {
     border: 0;
 }
 
-/* Detail modal */
 
 .createModal.w2p {
     display: flex;
@@ -66,7 +63,6 @@ button.notFavourite:hover svg {
     padding: 0px;
 }
 
-/* W2P Search */
 
 .searchFilter .css-fvipm8.Mui-focused .MuiOutlinedInput-notchedOutline {
     border-color: #37c391;
@@ -118,7 +114,6 @@ button.notFavourite:hover svg {
     }
 }
 
-/*Delete Modal*/
 
 .deleteModalWrapper.w2p {
     background: #fff;

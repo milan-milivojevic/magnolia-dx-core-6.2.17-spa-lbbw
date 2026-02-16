@@ -152,5 +152,4 @@ function CorporateIdentityColors ({
 }
 
 
-
 export default CorporateIdentityColors;

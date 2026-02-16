@@ -2,4 +2,3 @@ label: Autoplay
 $type: checkBoxField
 defaultValue: false
 buttonLabel: yes/no
-  

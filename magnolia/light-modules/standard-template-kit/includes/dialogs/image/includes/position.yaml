@@ -28,4 +28,3 @@ datasource:
     - name: bottomRight
       label: Bottom Right
       value: bottom right
-    

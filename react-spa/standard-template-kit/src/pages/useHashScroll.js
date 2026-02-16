@@ -44,7 +44,7 @@ export default function useHashScroll(
       await waitForImages(rootEl);
       requestAnimationFrame(() => {
         scrollToHash();
-        // Gasimo spinner TEK posle pomeranja.
+        
         setLoading(false);
       });
     };
